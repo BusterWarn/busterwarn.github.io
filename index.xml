@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workshops</title>
-    <link>https://workshops.github.io/</link>
+    <link>https://busterwarn.github.io/</link>
     <description>Recent content on Workshops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 18:46:26 +0200</lastBuildDate><atom:link href="https://workshops.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 May 2023 18:46:26 +0200</lastBuildDate><atom:link href="https://busterwarn.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up penetration testing tools.</title>
-      <link>https://workshops.github.io/posts/setup_pentest_tools/</link>
+      <link>https://busterwarn.github.io/posts/setup_pentest_tools/</link>
       <pubDate>Wed, 31 May 2023 18:46:26 +0200</pubDate>
       
-      <guid>https://workshops.github.io/posts/setup_pentest_tools/</guid>
+      <guid>https://busterwarn.github.io/posts/setup_pentest_tools/</guid>
       <description>Some Introduction In penetration testing, a lot of different tools are used. For our purposes, we&amp;rsquo;re going to be satisfied using nmap and metasploit.
 This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with Windows Subsystem for Linux (WSL).
 Kali Linux Kali Linux is a penetration testing linux distribution often used for penetration testing.</description>
