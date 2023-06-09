@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.112.5">
+  
+    <title>Workshops</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://workshops.github.io/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://workshops.github.io/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://workshops.github.io/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="https://workshops.github.io/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Workshops">
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://workshops.github.io/" />
+<meta property="og:site_name" content="Workshops" />
+
+  
+    <meta property="og:image" content="img/favicon/%!s().png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Workshops" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://workshops.github.io/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+  
+  <div class="posts">
+    
+    
+
+    
+    
+      
+    
+    
+
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://workshops.github.io/posts/setup_pentest_tools/">Setting up penetration testing tools.</a>
+        </h1>
+
+        <div class="post-meta">
+          
+            <time class="post-date">
+              2023-05-31 ::
+            </time>
+          
+          
+            <span class="post-author">Buster Hultgren Wärn</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://workshops.github.io/tags/"></a>&nbsp;
+            
+            #<a href="https://workshops.github.io/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h1 id="some-introduction">Some Introduction</h1>
+<p>In penetration testing, a lot of different tools are used. For our purposes, we&rsquo;re going to be satisfied using <a href="https://nmap.org/">nmap</a> and <a href="https://www.metasploit.com/">metasploit</a>.</p>
+<p>This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with <a href="https://learn.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux (WSL)</a>.</p>
+<h2 id="kali-linux">Kali Linux</h2>
+<p>Kali Linux is a penetration testing linux distribution often used for penetration testing. It have many standard tools already installed.</p>
+<h2 id="nmap">Nmap</h2>
+<p>Nmap is an enumeration tool, used to enumerate through ip addresses and ports. The goal here is often to find out what attack surface you have on a target.</p>
+<h2 id="metasploit">Metasploit</h2>
+<p>Metasploit (msfconsole??) is a command line tool that contains a lot of vulnerabilities that are easy to use. It got everything from auxiliary scanners to working vulnerabilities you can use to exploit different servers.</p>
+<h1 id="installation-guide">Installation Guide</h1>
+<h2 id="kali-linux-on-wsl-for-windows-10--11">Kali Linux on WSL for Windows 10 / 11</h2>
+<p>There are many ways to get access to these tools on your computer. We recommend that you install WSL with Kali Linux, either with a <a href="#getting-a-kali-linux-gui">GUI</a> or the more <a href="#install-wsl-with-kali-linux">regular way</a> and accessing Kali from a terminal interface. Both ways are described below.</p>
+<h3 id="some-common-problems">Some common problems.</h3>
+<p>Make sure you that you run powershell as administrator before you start installing.</p>
+
+  <img src="resources/_gen/images/run_powershell_as_admin.png"  alt="Hello Friend"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>A problem you might run into is that you need to enable hardware virtualization</p>
+<p><a href="https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/">https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/</a>
+<a href="https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1">https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1</a></p>
+<h2 id="install-kali-linux">Install Kali Linux</h2>
+<p>If you already have debian, ubuntu or some other linux machine set up, that should be sufficient. However Kali Linux is the usual distro for penetration testing so we will be installing this one.</p>
+<h3 id="install-wsl-with-kali-linux">Install WSL with Kali Linux</h3>
+<p>Instructions from kali.org: <a href="https://www.kali.org/docs/wsl/wsl-preparations/">https://www.kali.org/docs/wsl/wsl-preparations/</a></p>
+<h3 id="getting-a-kali-linux-gui">Getting a Kali Linux GUI</h3>
+<p>This video show some similar steps, it should be easy enough to follow.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/UXyS-xofGNM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="install-some-regular-dependencies">Install some regular dependencies</h3>
+<p>Kali Linux should come with a lot of tools fresh out of the box. But with WSL almost nothing will be installed. You might want to install some basic tools before starting:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get update -y
+</span></span><span style="display:flex;"><span>sudo apt-get upgrade -y
+</span></span><span style="display:flex;"><span>sudo apt-get install nmap -y
+</span></span><span style="display:flex;"><span>sudo apt-get install vim -y
+</span></span><span style="display:flex;"><span>sudo apt-get install git -y
+</span></span></code></pre></div><h2 id="install-nmap">Install nmap</h2>
+<p>From your now virtual (or real) kali linux, run the following command in terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install nmap -y
+</span></span></code></pre></div><p>You can test that it works by running <code>nmap google.com</code> and getting something similar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>└─$ nmap google.com
+</span></span><span style="display:flex;"><span>Starting Nmap 7.94 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2023-06-09 13:04 CEST
+</span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> google.com <span style="color:#f92672">(</span>142.250.74.78<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.015s latency<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Other addresses <span style="color:#66d9ef">for</span> google.com <span style="color:#f92672">(</span>not scanned<span style="color:#f92672">)</span>: 2a00:1450:400f:802::200e
+</span></span><span style="display:flex;"><span>rDNS record <span style="color:#66d9ef">for</span> 142.250.74.78: arn09s23-in-f14.1e100.net
+</span></span><span style="display:flex;"><span>Not shown: <span style="color:#ae81ff">998</span> filtered tcp ports <span style="color:#f92672">(</span>no-response<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>PORT    STATE SERVICE
+</span></span><span style="display:flex;"><span>80/tcp  open  http
+</span></span><span style="display:flex;"><span>443/tcp open  https
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 4.08 seconds
+</span></span></code></pre></div><h2 id="install-metasploit-framework">Install Metasploit-Framework</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo git clone https://github.com/rapid7/metasploit-framework.git /etc/metasploit-framework
+</span></span><span style="display:flex;"><span>sudo chown -R <span style="color:#e6db74">`</span>whoami<span style="color:#e6db74">`</span> /etc/metasploit-framework
+</span></span></code></pre></div>
+          
+        </div>
+
+        
+      </article>
+    
+
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

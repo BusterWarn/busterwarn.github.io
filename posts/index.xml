@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Workshops</title>
+    <link>https://workshops.github.io/posts/</link>
+    <description>Recent content in Posts on Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 18:46:26 +0200</lastBuildDate><atom:link href="https://workshops.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up penetration testing tools.</title>
+      <link>https://workshops.github.io/posts/setup_pentest_tools/</link>
+      <pubDate>Wed, 31 May 2023 18:46:26 +0200</pubDate>
+      
+      <guid>https://workshops.github.io/posts/setup_pentest_tools/</guid>
+      <description>Some Introduction In penetration testing, a lot of different tools are used. For our purposes, we&amp;rsquo;re going to be satisfied using nmap and metasploit.
+This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with Windows Subsystem for Linux (WSL).
+Kali Linux Kali Linux is a penetration testing linux distribution often used for penetration testing.</description>
+      <content>&lt;h1 id=&#34;some-introduction&#34;&gt;Some Introduction&lt;/h1&gt;
+&lt;p&gt;In penetration testing, a lot of different tools are used. For our purposes, we&amp;rsquo;re going to be satisfied using &lt;a href=&#34;https://nmap.org/&#34;&gt;nmap&lt;/a&gt; and &lt;a href=&#34;https://www.metasploit.com/&#34;&gt;metasploit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/wsl/about&#34;&gt;Windows Subsystem for Linux (WSL)&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;kali-linux&#34;&gt;Kali Linux&lt;/h2&gt;
+&lt;p&gt;Kali Linux is a penetration testing linux distribution often used for penetration testing. It have many standard tools already installed.&lt;/p&gt;
+&lt;h2 id=&#34;nmap&#34;&gt;Nmap&lt;/h2&gt;
+&lt;p&gt;Nmap is an enumeration tool, used to enumerate through ip addresses and ports. The goal here is often to find out what attack surface you have on a target.&lt;/p&gt;
+&lt;h2 id=&#34;metasploit&#34;&gt;Metasploit&lt;/h2&gt;
+&lt;p&gt;Metasploit (msfconsole??) is a command line tool that contains a lot of vulnerabilities that are easy to use. It got everything from auxiliary scanners to working vulnerabilities you can use to exploit different servers.&lt;/p&gt;
+&lt;h1 id=&#34;installation-guide&#34;&gt;Installation Guide&lt;/h1&gt;
+&lt;h2 id=&#34;kali-linux-on-wsl-for-windows-10--11&#34;&gt;Kali Linux on WSL for Windows 10 / 11&lt;/h2&gt;
+&lt;p&gt;There are many ways to get access to these tools on your computer. We recommend that you install WSL with Kali Linux, either with a &lt;a href=&#34;#getting-a-kali-linux-gui&#34;&gt;GUI&lt;/a&gt; or the more &lt;a href=&#34;#install-wsl-with-kali-linux&#34;&gt;regular way&lt;/a&gt; and accessing Kali from a terminal interface. Both ways are described below.&lt;/p&gt;
+&lt;h3 id=&#34;some-common-problems&#34;&gt;Some common problems.&lt;/h3&gt;
+&lt;p&gt;Make sure you that you run powershell as administrator before you start installing.&lt;/p&gt;
+
+  &lt;img src=&#34;resources/_gen/images/run_powershell_as_admin.png&#34;  alt=&#34;Hello Friend&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;p&gt;A problem you might run into is that you need to enable hardware virtualization&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&#34;&gt;https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&lt;/a&gt;
+&lt;a href=&#34;https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1&#34;&gt;https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install-kali-linux&#34;&gt;Install Kali Linux&lt;/h2&gt;
+&lt;p&gt;If you already have debian, ubuntu or some other linux machine set up, that should be sufficient. However Kali Linux is the usual distro for penetration testing so we will be installing this one.&lt;/p&gt;
+&lt;h3 id=&#34;install-wsl-with-kali-linux&#34;&gt;Install WSL with Kali Linux&lt;/h3&gt;
+&lt;p&gt;Instructions from kali.org: &lt;a href=&#34;https://www.kali.org/docs/wsl/wsl-preparations/&#34;&gt;https://www.kali.org/docs/wsl/wsl-preparations/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;getting-a-kali-linux-gui&#34;&gt;Getting a Kali Linux GUI&lt;/h3&gt;
+&lt;p&gt;This video show some similar steps, it should be easy enough to follow.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UXyS-xofGNM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;install-some-regular-dependencies&#34;&gt;Install some regular dependencies&lt;/h3&gt;
+&lt;p&gt;Kali Linux should come with a lot of tools fresh out of the box. But with WSL almost nothing will be installed. You might want to install some basic tools before starting:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install nmap -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install vim -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install git -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-nmap&#34;&gt;Install nmap&lt;/h2&gt;
+&lt;p&gt;From your now virtual (or real) kali linux, run the following command in terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install nmap -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can test that it works by running &lt;code&gt;nmap google.com&lt;/code&gt; and getting something similar:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─$ nmap google.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting Nmap 7.94 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; https://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; at 2023-06-09 13:04 CEST
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; google.com &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;142.250.74.78&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host is up &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0.015s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Other addresses &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; google.com &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;not scanned&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;: 2a00:1450:400f:802::200e
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rDNS record &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; 142.250.74.78: arn09s23-in-f14.1e100.net
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Not shown: &lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt; filtered tcp ports &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;no-response&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PORT    STATE SERVICE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;80/tcp  open  http
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;443/tcp open  https
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; IP address &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; host up&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; scanned in 4.08 seconds
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-metasploit-framework&#34;&gt;Install Metasploit-Framework&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo git clone https://github.com/rapid7/metasploit-framework.git /etc/metasploit-framework
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chown -R &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;whoami&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; /etc/metasploit-framework
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+  </channel>
+</rss>
