@@ -13,8 +13,18 @@
       <pubDate>Mon, 12 Jun 2023 11:20:24 +0200</pubDate>
       
       <guid>https://busterwarn.github.io/posts/hacking_workshop/lets_hack/</guid>
-      <description></description>
-      <content></content>
+      <description>You will have three different targets today. The first one is an easy target to get used to the tools. You will need to connect to our local network in order to do this. Then you can choose between two IPs to hack (both will be the same setup so it doesn&amp;rsquo;t really matter).
+192.168.1.202 192.168.1.116 When you feel confident, you can start on a more challenging target. You can pick between two different ones:</description>
+      <content>&lt;p&gt;You will have three different targets today. The first one is an easy target to get used to the tools. You will need to connect to our local network in order to do this. Then you can choose between two IPs to hack (both will be the same setup so it doesn&amp;rsquo;t really matter).&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;192.168.1.202
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;192.168.1.116
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When you feel confident, you can start on a more challenging target. You can pick between two different ones:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://68.183.67.32:8080/WebGoat&#34;&gt;OWASP WebGoat&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;a href=&#34;http://188.166.166.95:3000/&#34;&gt;OWASP Jucie Shop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have already done some vulnerability scanning with &lt;a href=&#34;https://www.zaproxy.org/&#34;&gt;OWASP ZAP&lt;/a&gt; that you can find them here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://busterwarn.github.io/posts/owasp_zap_scans/web_goat.html&#34;&gt;OWASP WebGoat scan&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;a href=&#34;https://busterwarn.github.io/posts/owasp_zap_scans/juice.html&#34;&gt;OWASP Jucie Shop scan&lt;/a&gt;&lt;/p&gt;
+</content>
     </item>
     
     <item>
