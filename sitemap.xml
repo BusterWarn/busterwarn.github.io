@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://busterwarn.github.io/posts/about/</loc>
-    <lastmod>2023-06-12T08:00:00+02:00</lastmod>
+    <loc>https://busterwarn.github.io/posts/hacking_workshop/lets_hack/</loc>
+    <lastmod>2023-06-12T11:20:24+02:00</lastmod>
   </url><url>
     <loc>https://busterwarn.github.io/posts/</loc>
+    <lastmod>2023-06-12T11:20:24+02:00</lastmod>
+  </url><url>
+    <loc>https://busterwarn.github.io/</loc>
+    <lastmod>2023-06-12T11:20:24+02:00</lastmod>
+  </url><url>
+    <loc>https://busterwarn.github.io/posts/about/</loc>
     <lastmod>2023-06-12T08:00:00+02:00</lastmod>
   </url><url>
     <loc>https://busterwarn.github.io/posts/hacking_workshop/setup_pentest_tools/</loc>
     <lastmod>2023-06-12T08:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://busterwarn.github.io/</loc>
-    <lastmod>2023-06-12T08:00:00+02:00</lastmod>
+    <loc>https://busterwarn.github.io/posts/owasp_zap_scans/scans/normalize/license/</loc>
   </url><url>
     <loc>https://busterwarn.github.io/categories/</loc>
   </url><url>
